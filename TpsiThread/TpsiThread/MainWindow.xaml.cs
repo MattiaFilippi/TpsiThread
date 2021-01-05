@@ -162,5 +162,66 @@ namespace TpsiThread
             Thread t = new Thread(new ThreadStart(Start));
             t.Start();
         }
+
+        private void Start()
+        {
+
+            t1.Start();
+            t2.Start();
+            t3.Start();
+            t4.Start();
+
+            t1.Join();
+            t2.Join();
+            t3.Join();
+            t4.Join();
+
+        }
+
+        private void Metodo4()
+        {
+            bool bl = true;
+            int a = 0, b = 0, c = 0;
+            while (bl)
+            {
+
+
+                if (t1.IsAlive == false && a == 0)
+                {
+                    this.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        Cronometro1.Stop();
+                        tempo[0] = new Tuple<string, double>(tempo[0].Item1, Cronometro1.Elapsed.TotalSeconds);
+                        classifica_lbl.Content = classifica_lbl.Content + tempo[0].Item1 + ": " + tempo[0].Item2 + "\n";
+                    }));
+                    a++;
+                }
+
+                if (t2.IsAlive == false && b == 0)
+                {
+                    this.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        Cronometro2.Stop();
+                        tempo[1] = new Tuple<string, double>(tempo[1].Item1, Cronometro2.Elapsed.TotalSeconds);
+                        classifica_lbl.Content = classifica_lbl.Content + tempo[1].Item1 + ": " + tempo[1].Item2 + "\n";
+                    }));
+                    b++;
+                }
+
+                if (t3.IsAlive == false && c == 0)
+                {
+                    this.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        Cronometro3.Stop();
+                        tempo[2] = new Tuple<string, double>(tempo[2].Item1, Cronometro3.Elapsed.TotalSeconds);
+                        classifica_lbl.Content = classifica_lbl.Content + tempo[2].Item1 + ": " + tempo[2].Item2 + "\n";
+                    }));
+                    c++;
+                }
+
+                if (a + b + c == 3)
+                    bl = false;
+            }
+        }
     }
 }
