@@ -1,0 +1,14 @@
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\bin\Debug\TpsiThread.exe.config
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\bin\Debug\TpsiThread.exe
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\bin\Debug\TpsiThread.pdb
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\TpsiThread.csprojAssemblyReference.cache
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\MainWindow.g.cs
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\App.g.cs
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\TpsiThread_MarkupCompile.cache
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\TpsiThread_MarkupCompile.lref
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\MainWindow.baml
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\TpsiThread.g.resources
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\TpsiThread.Properties.Resources.resources
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\TpsiThread.csproj.GenerateResource.cache
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\TpsiThread.exe
+C:\Users\UTENTE\Desktop\TpsiAlgoritmo\TpsiThread\TpsiThread\obj\Debug\TpsiThread.pdb
