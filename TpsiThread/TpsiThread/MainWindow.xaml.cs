@@ -81,5 +81,86 @@ namespace TpsiThread
             Cronometro2 = new Stopwatch();
             Cronometro3 = new Stopwatch();
         }
+
+        private void Metodo1()
+        {
+            Cronometro1.Start();
+            Sposta1();
+
+        }
+        private void Metodo2()
+        {
+            Cronometro2.Start();
+            Sposta2();
+
+        }
+        private void Metodo3()
+        {
+            Cronometro3.Start();
+            Sposta3();
+
+        }
+
+        private void Sposta1()
+        {
+
+            Random rnd = new Random();
+            double ml = 10;
+
+
+            while (ml < fine)
+            {
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+                    ml = tm.Margin.Left;
+                    int tmp = rnd.Next(10, 51);
+                    tm.Margin = new Thickness(ml + tmp, tm.Margin.Top, 0, 0);
+
+                }));
+                Thread.Sleep(rnd.Next(500, 1001));
+
+            }
+        }
+        private void Sposta2()
+        {
+            Random rnd = new Random();
+            double ml = 10;
+
+            while (ml < fine)
+            {
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+                    ml = ovetto.Margin.Left;
+                    int tmp = rnd.Next(10, 51);
+                    ovetto.Margin = new Thickness(ml + tmp, ovetto.Margin.Top, 0, 0);
+
+                }));
+                Thread.Sleep(rnd.Next(500, 1001));
+
+            }
+        }
+        private void Sposta3()
+        {
+            Random rnd = new Random();
+            double ml = 10;
+
+            while (ml < fine)
+            {
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+                    ml = panigale.Margin.Left;
+                    int tmp = rnd.Next(10, 51);
+                    panigale.Margin = new Thickness(ml + tmp, panigale.Margin.Top, 0, 0);
+
+                }));
+                Thread.Sleep(rnd.Next(500, 1001));
+
+            }
+        }
+        private void btn_init_Click(object sender, RoutedEventArgs e)
+        {
+            Thread t = new Thread(new ThreadStart(Start));
+            t.Start();
+        }
     }
 }
