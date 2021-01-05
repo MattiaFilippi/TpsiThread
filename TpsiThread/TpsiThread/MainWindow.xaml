@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Image HorizontalAlignment="Left" Height="479" VerticalAlignment="Top" Width="850" Source="strada.png" Margin="0,27,0,-0.4" />
+        <Image x:Name="tm" HorizontalAlignment="Left" Height="131" Margin="10,27,0,0" VerticalAlignment="Top" Width="135" Source="tm.png"/>
+        <Image x:Name="ovetto" HorizontalAlignment="Left" Height="136" Margin="10,163,0,0" VerticalAlignment="Top" Width="135" Source="ovetto.png"/>
+        <Image x:Name="panigale" HorizontalAlignment="Left" Height="113" VerticalAlignment="Top" Width="118" Margin="10,345,0,0" Source="panigale.png"/>
+        <Label x:Name="classifica_lbl" Content="" HorizontalAlignment="Left" Margin="612,10,0,0" VerticalAlignment="Top" Width="172" Height="212"/>
+        <Button x:Name="btn_init" Content="inizia" HorizontalAlignment="Left" Margin="632,280,0,0" VerticalAlignment="Top" Width="127" Height="29" Click="btn_init_Click"/>
+
+
     </Grid>
 </Window>
